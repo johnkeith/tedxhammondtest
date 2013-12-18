@@ -14,6 +14,9 @@ a:hover {
 
 /* JSK EDITS */
 
+.tedx-description {
+  padding:50px 0 0 0;
+}
 .centered-logo {
   margin:0 auto;
 }
@@ -267,7 +270,7 @@ i.our-speakers-icon {
 
 /* Portfolio */
 
-.school {
+.our-school {
   padding: 50px 0;
 }
 
@@ -282,7 +285,7 @@ i.our-speakers-icon {
 
 /* Call to Action */
 
-.contact {
+.event-application-contact {
   color: #ffffff;
   background: #034577;
   padding: 50px 0;
