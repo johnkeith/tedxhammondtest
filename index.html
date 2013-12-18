@@ -14,6 +14,7 @@
     <!-- Add custom CSS here -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,600' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -29,7 +30,7 @@
         <li><a href="#our-school">Our School</a></li>
         <li><a href="#contact">Contact Us</a></li>
         <li><a href="#location">Venue Location</a></li>
-        <li><a href="#tedx-description">About TEDx</li>
+        <li><a href="#tedx-description">About TEDx</a></li>
 
       </ul>
     </div>
@@ -38,7 +39,7 @@
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
       <div class="vert-text">
-     <div class="responsive-logo">
+     <div id="header-logo" class="responsive-logo">
       <img src="img/TEDxHSOneLineLarge.png" class="img-responsive centered-logo" alt="TEDxHammondSchool"></div>
         <!--<figure class="responsive-logo" data-media="img/TEDxHammondSchoolTwoLinesSmall.png" data-media440="img/TEDxHSOneLineMedium.png" data-media600="img/TEDxHSOneLineLarge.png" title="TEDxHammondSchool">
           <noscript>
@@ -243,14 +244,19 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-picture-min.js"></script>
+    <script src="js/stickUp.min.js"></script>
 
-    <!-- JS for responsive logo in header -->
-    <script>
-    $(function(){
-        $('figure.responsive-logo').picture();
-    });
-    </script>
+    <!-- JS for sticky logo in header -->
+       <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('#header-logo').stickUp();
+                });
+              });
+
+            </script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
