@@ -25,12 +25,12 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle btn-menu-close"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="#top">Navigation</a></li>
-        <li><a href="#our-event">Our Event</a></li>
-        <li><a href="#our-speakers">Our Speakers</a></li>
-        <li><a href="#our-school">Our School</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#location">Venue Location</a></li>
-        <li><a href="#tedx-description">About TEDx</a></li>
+        <li><a class="menu-item" href="#our-event">Our Event</a></li>
+        <li><a class="menu-item" href="#our-speakers">Our Speakers</a></li>
+        <li><a class="menu-item" href="#our-school">Our School</a></li>
+        <li><a class="menu-item" href="#contact">Contact Us</a></li>
+        <li><a class="menu-item" href="#location">Venue Location</a></li>
+        <li><a class="menu-item" href="#tedx-description">About TEDx</a></li>
 
       </ul>
     </div>
@@ -256,6 +256,11 @@
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $(".menu-item").click(function(e) {
+          $("#sidebar-wrapper").toggleClass("active");
         });
     </script>
     <script>
